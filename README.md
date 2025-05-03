@@ -42,7 +42,7 @@ The PHP script (`countLinesInProject.php`) recursively scans a project directory
 3. **Exclude directories**:
    Add directories to exclude in the `$excludeDirs` array (use relative paths from `$projectDir`):
    ```php
-   $excludeDirs = ['/PHPMailer/'];
+   $excludeDirs =  ['/vendor/','/node_modules/'];
    ```
 
 4. **Run the script**:
@@ -101,7 +101,7 @@ Tập lệnh PHP (`countLinesInProject.php`) quét đệ quy một thư mục d�
 3. **Loại trừ thư mục**:
    Thêm các thư mục cần loại trừ vào mảng `$excludeDirs` (sử dụng đường dẫn tương đối từ `$projectDir`):
    ```php
-   $excludeDirs = ['/PHPMailer/'];
+   $excludeDirs =  ['/vendor/','/node_modules/'];
    ```
 
 4. **Chạy tập lệnh**:
