@@ -83,5 +83,5 @@ function countLinesInProject($dir, $extensions = [], $excludeDirs = [])
 
 $projectDir = $_SERVER['DOCUMENT_ROOT']; // Đường dẫn đến thư mục dự án của bạn
 $extensions = ['php', "js", "html", "css"]; // Các phần mở rộng tệp cần đếm dòng
-$excludeDirs = ['/PHPMailer/']; // Các thư mục cần loại trừ khỏi việc đếm dòng
+$excludeDirs = ['/vendor/','/node_modules/']; // Các thư mục cần loại trừ khỏi việc đếm dòng
 $totalLines = countLinesInProject($projectDir, $extensions, $excludeDirs);
